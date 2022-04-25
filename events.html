@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vildskud</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="wrapper">
+        <section class="section">
+          <h1>Events</h1>
+          <p>
+            Kom med til vores sjove, og meget populære events. Her klæder vi dig
+            blandt andet på til fremtidens scenekunst, til ny dansk dramatik
+            samt holder vi oplæg om scenekunst som tabu.
+          </p>
+
+          <article>
+            <!-- <img src="content/forstillinger/event.png" alt="event" /> -->
+            <p>12:30</p>
+            <p>SUPER FEDT EVENT</p>
+            <p>
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article>
+            <!-- <img src="content/forstillinger/event.png" alt="event" /> -->
+            <p>15:30</p>
+            <p>SUPER FEDT EVENT</p>
+            <p>
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+
+          <article>
+            <!-- <img src="content/forstillinger/event.png" alt="event" /> -->
+            <p>20:30</p>
+            <p>SUPER FEDT EVENT</p>
+            <p>
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  article {
+    display: flex;
+    justify-content: space-between;
+    border: var(--border);
+    background-image: url(content/forstillinger/event.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px;
+    height: 20rem;
+    width: auto;
+    margin-block: 2rem;
+  }
+
+  @media (min-width: 1000px) {
+    article {
+      display: flex;
+      justify-content: space-between;
+      border: var(--border);
+      background-image: url(content/forstillinger/event.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1200px;
+      height: 20rem;
+      width: auto;
+      margin-block: 2rem;
+    }
+  }
+</style>
