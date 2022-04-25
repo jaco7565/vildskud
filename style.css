@@ -151,12 +151,14 @@ body {
   font-family: var(--noto), serif;
   font-weight: var(--bold);
   font-size: var(--font-size-lg);
+  transition: var(--trans);
 }
 
 .bg-link-small {
   font-family: "copenhagen", sans-serif;
   font-weight: var(--bold);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
+  transition: var(--trans);
 }
 
 .bar {
@@ -210,21 +212,6 @@ body {
   animation-iteration-count: infinite;
 
   animation-duration: 4.5s;
-}
-
-.hamburger:hover {
-  transform: translate(5px);
-  transform: scale(1.1);
-}
-
-.hamburger:hover::after {
-  transform: translate(5px);
-  transform: scale(1.1);
-}
-
-.hamburger:hover::before {
-  transform: translate(5px);
-  transform: scale(1.1);
 }
 
 .navbar-top a,
@@ -292,8 +279,8 @@ main {
 
 .flex {
   display: flex;
-  gap: var(--spacing-4);
-  justify-content: center;
+  gap: var(--spacing-8);
+  justify-content: space-between;
 }
 
 .section {
@@ -416,16 +403,6 @@ a {
   transition: ease-in 100ms;
 }
 
-.button:hover::before {
-  top: 24%;
-  left: 8%;
-}
-
-.button:hover {
-  background-color: var(--ui-bg);
-  color: var(--primary);
-}
-
 .input {
   border: none;
   background: transparent;
@@ -461,6 +438,29 @@ a {
     /* flex-direction: row-reverse; */
     text-align: right;
     grid-column: 1/1;
+  }
+
+  .hamburger:hover {
+    transform: translate(5px);
+    transform: scale(1.1);
+  }
+
+  .button:hover::before {
+    top: 24%;
+    left: 8%;
+  }
+
+  .button:hover {
+    background-color: var(--ui-bg);
+    color: var(--primary);
+  }
+
+  .bg-link:hover {
+    letter-spacing: 15px;
+  }
+
+  .bg-link-small:hover {
+    text-decoration: line-through;
   }
 }
 
