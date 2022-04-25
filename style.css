@@ -405,14 +405,21 @@ a {
 
 @media (min-width: 1000px) {
   .spillested {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-3);
   }
 
   .left-align {
-    flex-direction: row;
+    /* flex-direction: row; */
+    text-align: left;
+    grid-area: 1/2;
   }
 
   .right-align {
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
+    text-align: right;
+    grid-column: 1/1;
   }
 }
