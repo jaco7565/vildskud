@@ -21,6 +21,9 @@
 
   /* Letter spacing */
 
+  /* Box-shadow */
+  --shadow-btn: 5px 5px var(--primary-font);
+
   /* spacing */
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -155,7 +158,10 @@ a {
 .button {
   display: inline-block;
   border: var(--border);
+  background-color: transparent;
   color: var(--p-font);
   font-size: var(--font-size-base);
-  box-shadow: ;
+  box-shadow: var(--shadow-btn);
+  padding-block: var(--spacing-2);
+  padding-inline: var(--spacing-4);
 }
