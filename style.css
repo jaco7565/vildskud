@@ -3,5 +3,159 @@
   --primary: #eae3d8;
   --primary-font: #4c433d;
   --p-font: #55514a;
-  --gradient: #f22fb0;
+
+  --ui-bg: #4c433d;
+  --ui-hover-color: #eae3d8;
+
+  /* Font sizes */
+  --font-size-sm: clamp(0.8rem, 0.07vw + 0.78rem, 0.84rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.78vw + 1.05rem, 1.68rem);
+  --font-size-lg: clamp(1.56rem, 1.48vw + 1.19rem, 2.37rem);
+  --font-size-xl: clamp(1.95rem, 2.55vw + 1.31rem, 3.36rem);
+  --font-size-xxl: clamp(2.44rem, 4.19vw + 1.39rem, 4.75rem);
+  --font-size-xxxl: clamp(3.05rem, 6.66vw + 1.39rem, 6.71rem);
+
+  /* Line height */
+  --line-height: (0.25 + 1 + 0.25);
+
+  /* Letter spacing */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.5rem;
+  --spacing-6: 2rem;
+  --spacing-7: 2.5rem;
+  --spacing-8: 3rem;
+  --spacing-9: 4rem;
+  --spacing-10: 5rem;
+  --spacing-11: 6rem;
+  --spacing-12: 7rem;
+  --spacing-13: 8rem;
+
+  /* Border radius */
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* Border */
+  --border-thick: 4px solid var(--ui-bg);
+  --border: 2px solid var(--ui-bg);
+
+  /*Weights */
+  --bold: bold;
+  --light: lighter;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "gerbil";
+  src: url("fonte/gerbil-webfont.woff2") format("woff2"),
+    url("fonte/gerbil-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "copenhagen";
+  src: url("fonte/david_engelby_foundry_-_copenhagen_grotesk_nova_bold-webfont.woff2")
+      format("woff2"),
+    url("fonte/david_engelby_foundry_-_copenhagen_grotesk_nova_bold-webfont.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "copenhagen";
+  src: url("fonte/david_engelby_foundry_-_copenhagen_grotesk_nova_regular-webfont.woff2")
+      format("woff2"),
+    url("fonte/david_engelby_foundry_-_copenhagen_grotesk_nova_regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "copenhagen";
+  src: url("fonte/david_engelby_foundry_-_copenhagengrotesknova-light-webfont.woff2")
+      format("woff2"),
+    url("fonte/david_engelby_foundry_-_copenhagengrotesknova-light-webfont.woff")
+      format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "copenhagen", sans-serif;
+  color: var(--primary-font);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+p {
+  font-family: "copenhagen", sans-serif;
+  font-size: var(--font-size-base);
+  color: var(--p-font);
+}
+
+h1 {
+  font-family: "gerbil", sans-serif;
+  font-size: var(--font-size-xxxl);
+  color: var(--primary-font);
+}
+
+h2 {
+  font-family: "gerbil", sans-serif;
+  font-size: var(--font-size-xxl);
+  color: var(--primary-font);
+}
+
+h3,
+.spons {
+  font-family: "Noto Serif Display", serif;
+  font-size: var(--font-size-xl);
+  color: var(--primary-font);
+  font-weight: var(--bold);
+}
+
+.outlined-spons {
+  font-family: "Noto Serif Display", serif;
+  font-size: var(--font-size-xl);
+  color: var(--primary);
+  -webkit-text-stroke: 1px var(--primary-font);
+  font-weight: var(--bold);
+}
+
+h4,
+.lead {
+  font-family: "copenhagen", sans-serif;
+  font-size: var(--font-size-lg);
+  color: var(--primary-font);
+  font-weight: var(--bold);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  display: inline-block;
+  border: var(--border);
+  color: var(--p-font);
+  font-size: var(--font-size-base);
+  box-shadow: ;
 }
