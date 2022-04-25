@@ -376,6 +376,12 @@ a {
   box-sizing: border-box;
 }
 
+.input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--primary-font);
+}
+
 @media (min-width: 1000px) {
   .spillested {
     display: flex;
