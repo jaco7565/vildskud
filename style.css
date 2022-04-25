@@ -133,6 +133,11 @@ body {
   z-index: 999;
 }
 
+.s {
+  transform: translateX(8px);
+  font-family: "gerbil", sans-serif;
+}
+
 .logo {
   font-family: "gerbil", sans-serif;
   font-size: var(--font-size-xl);
@@ -173,7 +178,7 @@ body {
   position: relative;
 
   /*   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; */
-
+  transition: var(--trans);
   aspect-ratio: 1/1;
   padding: var(--spacing-4);
 }
@@ -186,7 +191,11 @@ body {
   height: 4.5rem;
   position: absolute;
   top: 7%;
-  right: 6%;
+  right: 4%;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-duration: 4s;
 }
 .hamburger::before {
   position: absolute;
@@ -197,7 +206,27 @@ body {
   border-radius: 999px;
   right: 1%;
   top: 7%;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+
+  animation-duration: 4.5s;
 }
+
+.hamburger:hover {
+  transform: translate(5px);
+  transform: scale(1.1);
+}
+
+.hamburger:hover::after {
+  transform: translate(5px);
+  transform: scale(1.1);
+}
+
+.hamburger:hover::before {
+  transform: translate(5px);
+  transform: scale(1.1);
+}
+
 .navbar-top a,
 .navbar-top .hamburger {
   position: relative;
@@ -403,6 +432,17 @@ a {
   border-bottom: 1px solid var(--primary-font);
 }
 
+.some {
+  display: flex;
+  gap: var(--spacing-10);
+  padding: var(--spacing-5);
+}
+
+.email {
+  margin-inline: var(--spacing-10);
+  margin-block: var(--spacing-5);
+}
+
 @media (min-width: 1000px) {
   .spillested {
     /* display: flex; */
@@ -421,5 +461,17 @@ a {
     /* flex-direction: row-reverse; */
     text-align: right;
     grid-column: 1/1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 43% 56%;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 43% 56%;
   }
 }
