@@ -24,32 +24,29 @@
             samt holder vi oplæg om scenekunst som tabu.
           </p>
 
-          <article>
-            <!-- <img src="content/forstillinger/event.png" alt="event" /> -->
+          <article class="event">
             <p>12:30</p>
-            <p>SUPER FEDT EVENT</p>
-            <p>
+            <p class="event_navn">SUPER FEDT EVENT</p>
+            <p class="event_lokation">
               CHRISTIANSHAVN
               <br />
               BEBOERHUS
             </p>
           </article>
-          <article>
-            <!-- <img src="content/forstillinger/event.png" alt="event" /> -->
-            <p>15:30</p>
-            <p>SUPER FEDT EVENT</p>
-            <p>
+          <article class="event">
+            <p>12:30</p>
+            <p class="event_navn">SUPER FEDT EVENT</p>
+            <p class="event_lokation">
               CHRISTIANSHAVN
               <br />
               BEBOERHUS
             </p>
           </article>
 
-          <article>
-            <!-- <img src="content/forstillinger/event.png" alt="event" /> -->
-            <p>20:30</p>
-            <p>SUPER FEDT EVENT</p>
-            <p>
+          <article class="event">
+            <p>12:30</p>
+            <p class="event_navn">SUPER FEDT EVENT</p>
+            <p class="event_lokation">
               CHRISTIANSHAVN
               <br />
               BEBOERHUS
@@ -70,9 +67,21 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1200px;
-    height: 20rem;
+    height: 10rem;
     width: auto;
     margin-block: 2rem;
+  }
+  .event_lokation {
+    font-size: var(--font-size-sm);
+    text-align: center;
+  }
+  .event p {
+    align-self: center;
+    margin-inline: var(--spacing-3);
+  }
+  .event_navn {
+    text-align: center;
+    font-size: var(--font-size-lg);
   }
 
   @media (min-width: 1000px) {
@@ -84,9 +93,13 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 1200px;
-      height: 20rem;
+      height: 15rem;
       width: auto;
       margin-block: 2rem;
+    }
+    .event p {
+      align-self: center;
+      margin-inline: var(--spacing-6);
     }
   }
 </style>
