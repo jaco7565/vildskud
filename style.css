@@ -151,7 +151,8 @@ h3,
   font-weight: var(--bold);
 }
 
-.outlined-spons {
+.outlined-spons,
+.outlined {
   font-family: "Noto Serif Display", serif;
   font-size: var(--font-size-xl);
   color: var(--primary);
@@ -190,14 +191,16 @@ a {
   box-shadow: none;
 }
 
-.spillested {
-  display: flex;
-}
+@media (min-width: 1000px) {
+  .spillested {
+    display: flex;
+  }
 
-.left-align {
-  flex-direction: row;
-}
+  .left-align {
+    flex-direction: row;
+  }
 
-.right-align {
-  flex-direction: row-reverse;
+  .right-align {
+    flex-direction: row-reverse;
+  }
 }
