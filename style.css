@@ -314,12 +314,18 @@ main {
 
 .section {
   margin-block: 15rem;
+}
+
+.intro-text {
   display: grid;
+
+  justify-content: center;
+  margin-block: var(--spacing-8);
 }
 
 .text-center {
   text-align: center;
-  margin-block: var(--spacing-5);
+  margin-block: var(--spacing-2);
 }
 
 .wrapper {
@@ -615,19 +621,26 @@ footer .p-var {
     /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: var(--spacing-3);
+    grid-gap: var(--spacing-5);
+    margin-block: var(--spacing-8);
+  }
+
+  .spillested img {
+    aspect-ratio: 1/1;
   }
 
   .left-align {
     /* flex-direction: row; */
     text-align: left;
     grid-area: 1/2;
+    align-self: center;
   }
 
   .right-align {
     /* flex-direction: row-reverse; */
     text-align: right;
     grid-column: 1/1;
+    align-self: center;
   }
 
   .day-tickets {
