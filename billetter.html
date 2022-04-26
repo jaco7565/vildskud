@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vildskud</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-top">
+          <h1>
+            <a class="logo" href="index.html">V<span class="s">S</span></a>
+          </h1>
+          <div class="date">
+            <p>10 - 14</p>
+            <p>August</p>
+          </div>
+
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+
+          <div class="burger-content">
+            <ul>
+              <li><a class="bg-link" href="program.html">PROGRAM</a></li>
+              <li><a class="bg-link" href="billetter.html">BILLETTER</a></li>
+              <li><a class="bg-link" href="om.html">OM VILDSKUD</a></li>
+              <li>
+                <a class="bg-link" href="spillesteder.html">SPILLESTEDER</a>
+              </li>
+              <li><a class="bg-link" href="events.html">PRAKTISK INFO</a></li>
+            </ul>
+            <ul class="flex">
+              <li>
+                <a class="bg-link-small" href="frivillig-html">FRIVILLIGE</a>
+              </li>
+              <li>
+                <a class="bg-link-small" href="frivillig-html">BÆREDYGTIGHED</a>
+              </li>
+              <li>
+                <a class="bg-link-small" href="frivillig-html"
+                  >SAMARBEJDSPARTNERE</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="wrapper">
+        <section class="section">
+          <h1>Billetter</h1>
+          <p>
+            Med en billet til VildSkud festival, får du mulighed for at opleve
+            undergrunden i dansk scenekunst og medvirke på en platform for at
+            møde et bredt publikum.
+          </p>
+
+          <article class="event">
+            <p>12:30</p>
+            <p class="event_navn">SUPER FEDT EVENT</p>
+            <p class="event_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="event">
+            <p>12:30</p>
+            <p class="event_navn">SUPER FEDT EVENT</p>
+            <p class="event_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+
+          <article class="event">
+            <p>12:30</p>
+            <p class="event_navn">SUPER FEDT EVENT</p>
+            <p class="event_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
+<style>
+  article {
+    display: flex;
+    justify-content: space-between;
+    border: var(--border);
+    background-image: url(content/forstillinger/event.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px;
+    height: 10rem;
+    width: auto;
+    margin-block: 2rem;
+  }
+  .event_lokation {
+    font-size: var(--font-size-sm);
+    text-align: center;
+  }
+  .event p {
+    align-self: center;
+    margin-inline: var(--spacing-3);
+  }
+  .event_navn {
+    text-align: center;
+    font-size: var(--font-size-lg);
+  }
+
+  @media (min-width: 1000px) {
+    article {
+      display: flex;
+      justify-content: space-between;
+      border: var(--border);
+      background-image: url(content/forstillinger/event.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1200px;
+      height: 15rem;
+      width: auto;
+      margin-block: 2rem;
+    }
+    .event p {
+      align-self: center;
+      margin-inline: var(--spacing-6);
+    }
+  }
+</style>

@@ -35,11 +35,13 @@
 
           <div class="burger-content">
             <ul>
-              <li><a class="bg-link" href="program-html">PROGRAM</a></li>
-              <li><a class="bg-link" href="program-html">BILLETTER</a></li>
-              <li><a class="bg-link" href="program-html">OM VILDSKUD</a></li>
-              <li><a class="bg-link" href="program-html">SPILLESTEDER</a></li>
-              <li><a class="bg-link" href="program-html">PRAKTISK INFO</a></li>
+              <li><a class="bg-link" href="program.html">PROGRAM</a></li>
+              <li><a class="bg-link" href="billetter.html">BILLETTER</a></li>
+              <li><a class="bg-link" href="om.html">OM VILDSKUD</a></li>
+              <li>
+                <a class="bg-link" href="spillesteder.html">SPILLESTEDER</a>
+              </li>
+              <li><a class="bg-link" href="events.html">PRAKTISK INFO</a></li>
             </ul>
             <ul class="flex">
               <li>
@@ -100,59 +102,80 @@
             <figure><img src="" alt="Om os billede" /></figure>
           </article>
 
-          <article>
-            <article>
-              <h3>TEAMET BAG</h3>
-              <p>
-                Den første Vildskud Festival blev afholdt i 2003, på baggrund af
-                initiativ fra studentermedhjælperen i DATS – lands­forening for
-                dramatisk virksomhed – og aktive scenekunstnere i
-                undergrundsmiljøet.
-              </p>
-              <p>
-                Alle ønskede de at kortlægge det lidt diffuse område
-                ‘independent-scenen’ og ud fra en fornemmelse af, at der rundt
-                omkring i københavnske kældre og nedlagte fabrikslokaler voksede
-                stærke kreative kræfter, blev kimen til Vildskud lagt.
-              </p>
-              <p>
-                Et udpluk af kræfterne fra undergrunden satte sig sammen for at
-                skabe et fællesskab, hvor aktørerne kunne mødes. I august ’03
-                blev Vildskud en realitet. I dag er Vildskud en del af
-                TeaterHuset og har hjemme i Huset-KBH, hvor vi hvert år får
-                sparring og støtte til at lave den bedst tænkelige festival.
-              </p>
-            </article>
+          <h3>TEAMET BAG</h3>
 
+          <article id="teamet_bag">
             <article>
-              <p class="spons outlined">
-                NIKITA <br />
+              <p class="spons outlined navn_teamet">
+                NIKITA
+                <br />
                 FERNANDO
               </p>
               <p>
-                Projektleder og gruppeansvarlig info@vildskud.dk //
-                grupper@vildskud.dk
+                Projektleder og gruppeansvarlig
+                <br />
+                info@vildskud.dk // grupper@vildskud.dk
               </p>
             </article>
             <article>
-              <p class="spons">KRISTINE AABEL</p>
-              <p>Blæksprutte & presse info@vildskud.dk</p>
+              <p class="spons navn_teamet">
+                KRISTINE
+                <br />
+                AABEL
+              </p>
+              <p>
+                Blæksprutte & presse
+                <br />
+                info@vildskud.dk
+              </p>
             </article>
             <article>
-              <p class="spons outlined">VIBEKE BLINDBÆK</p>
-              <p>Pr, medier og presse progpresse@vildskud.dk</p>
+              <p class="spons outlined navn_teamet">
+                VIBEKE
+                <br />
+                BLINDBÆK
+              </p>
+              <p>
+                Pr, medier og presse
+                <br />
+                progpresse@vildskud.dk
+              </p>
             </article>
             <article>
-              <p class="spons">STINA HYLLESTED</p>
-              <p>Blæksprutte info@vildskud.dk</p>
+              <p class="spons navn_teamet">
+                STINA
+                <br />
+                HYLLESTED
+              </p>
+              <p>
+                Blæksprutte
+                <br />
+                info@vildskud.dk
+              </p>
             </article>
             <article>
-              <p class="spons outlined">LOUISE LETH</p>
-              <p>Juryansvarlig og Billetansvarlig billet@vildskud.com</p>
+              <p class="spons outlined navn_teamet">
+                LOUISE
+                <br />
+                LETH
+              </p>
+              <p>
+                Juryansvarlig og Billetansvarlig
+                <br />
+                billet@vildskud.com
+              </p>
             </article>
             <article>
-              <p class="spons">BALDRIAN SECTOR</p>
-              <p>Cheftekniker teknik@vildskud.dk</p>
+              <p class="spons navn_teamet">
+                BALDRIAN
+                <br />
+                SECTOR
+              </p>
+              <p>
+                Cheftekniker
+                <br />
+                teknik@vildskud.dk
+              </p>
             </article>
           </article>
         </section>
@@ -160,3 +183,18 @@
     </main>
   </body>
 </html>
+<style>
+  .navn_teamet {
+    border: var(--border);
+  }
+  #teamet_bag p {
+    text-align: center;
+  }
+  @media (min-width: 1000px) {
+    #teamet_bag {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+</style>
