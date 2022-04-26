@@ -45,6 +45,7 @@
   --spacing-11: 6rem;
   --spacing-12: 7rem;
   --spacing-13: 8rem;
+  --spacing-14: 20rem;
 
   /* Border radius */
   --radius-md: 0.5rem;
@@ -133,14 +134,13 @@ body {
   z-index: 999;
 }
 
-.s {
-  transform: translateX(8px);
+.logo a {
   font-family: "gerbil", sans-serif;
+  font-size: var(--font-size-xl);
 }
 
 .logo {
-  font-family: "gerbil", sans-serif;
-  font-size: var(--font-size-xl);
+  transition: var(--trans);
 }
 .date {
   display: flex;
@@ -178,6 +178,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 
   /*   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; */
   transition: var(--trans);
@@ -274,7 +275,7 @@ main {
 
 .intro {
   text-align: center;
-  margin-top: 20rem;
+  margin-top: var(--spacing-14);
 }
 
 .flex {
@@ -284,7 +285,12 @@ main {
 }
 
 .section {
-  margin-block: var(--spacing-6);
+  margin-top: 15rem;
+}
+
+.text-center {
+  text-align: center;
+  margin-block: var(--spacing-5);
 }
 
 .wrapper {
@@ -461,6 +467,10 @@ a {
 
   .bg-link-small:hover {
     text-decoration: line-through;
+  }
+
+  .logo:hover {
+    transform: scale(1.1);
   }
 }
 
