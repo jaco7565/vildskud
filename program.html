@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="mixitup.min.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -59,7 +60,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="vildskudprogram">
       <section class="wrapper">
         <section class="section">
           <h2 class="text-center">Billetter</h2>
@@ -69,29 +70,214 @@
             møde et bredt publikum.
           </p>
 
-          <article class="event">
-            <p>12:30</p>
-            <p class="event_navn">SUPER FEDT EVENT</p>
-            <p class="event_lokation">
+          <article>
+            <form>
+              <fieldset class="input-field" data-filter-group="programmet">
+                <button type="button" name="programmet" data-filter=".onsdag">
+                  <p class="dag">Onsdag</p>
+                  <p class="dato">d.10</p>
+                </button>
+                <button type="button" name="programmet" data-filter=".torsdag">
+                  <p class="dag">Torsdag</p>
+                  <p class="dato">d.11</p>
+                </button>
+
+                <button type="button" name="program" data-filter=".fredag">
+                  <p class="dag">Fredag</p>
+                  <p class="dato">d.12</p>
+                </button>
+
+                <button type="button" name="program" data-filter=".loerdag">
+                  <p class="dag">Lørdag</p>
+                  <p class="dato">d.13</p>
+                </button>
+              </fieldset>
+            </form>
+          </article>
+          <!-- -------------------------OSNDAG--------------------------------->
+          <article class="program mix onsdag sta_ret">
+            <p>10:30</p>
+            <p class="program_navn">Stå ret, få ret</p>
+            <p class="program_lokation">
               CHRISTIANSHAVN
               <br />
               BEBOERHUS
             </p>
           </article>
-          <article class="event">
+          <article class="program mix onsdag wish">
             <p>12:30</p>
-            <p class="event_navn">SUPER FEDT EVENT</p>
-            <p class="event_lokation">
+            <p class="program_navn">WISH</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix onsdag sta_ret">
+            <p>12:30</p>
+            <p class="program_navn">Stå ret, få ret</p>
+            <p class="program_lokation">
               CHRISTIANSHAVN
               <br />
               BEBOERHUS
             </p>
           </article>
 
-          <article class="event">
+          <article class="program mix onsdag maskeret">
             <p>12:30</p>
-            <p class="event_navn">SUPER FEDT EVENT</p>
-            <p class="event_lokation">
+            <p class="program_navn">MASKERET</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix onsdag surt_opstod">
+            <p>12:30</p>
+            <p class="program_navn">ET SURT OPSTØD</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <!-- -------------------------TORSDAG--------------------------------->
+
+          <article class="program mix torsdag korer_ik">
+            <p>12:30</p>
+            <p class="program_navn">Torsdag</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix torsdag skammer_du">
+            <p>12:30</p>
+            <p class="program_navn">SKAMMER DU DIG NU?</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix torsdag mona_lisa">
+            <p>12:30</p>
+            <p class="program_navn">Mona Lisa Natten</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix torsdag korer_ik">
+            <p>12:30</p>
+            <p class="program_navn">ALT KØRER, IK</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix torsdag skammer_du">
+            <p>12:30</p>
+            <p class="program_navn">SKAMMER DU DIG NU?</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <!-- -------------------------FREDAG--------------------------------->
+
+          <article class="program mix fredag korer_ik">
+            <p>12:30</p>
+            <p class="program_navn">Torsdag</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix fredag skammer_du">
+            <p>12:30</p>
+            <p class="program_navn">SKAMMER DU DIG NU?</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix fredag mona_lisa">
+            <p>12:30</p>
+            <p class="program_navn">Mona Lisa Natten</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix fredag korer_ik">
+            <p>12:30</p>
+            <p class="program_navn">ALT KØRER, IK</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix fredag skammer_du">
+            <p>12:30</p>
+            <p class="program_navn">SKAMMER DU DIG NU?</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <!-- -------------------------LØRDAG--------------------------------->
+
+          <article class="program mix loerdag sta_ret">
+            <p>10:30</p>
+            <p class="program_navn">Stå ret, få ret</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix loerdag wish">
+            <p>12:30</p>
+            <p class="program_navn">WISH</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mix loerdag sta_ret">
+            <p>12:30</p>
+            <p class="program_navn">Stå ret, få ret</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+
+          <article class="program mix loerdag maskeret">
+            <p>12:30</p>
+            <p class="program_navn">MASKERET</p>
+            <p class="program_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </article>
+          <article class="program mixloerdag surt_opstod">
+            <p>12:30</p>
+            <p class="program_navn">ET SURT OPSTØD</p>
+            <p class="program_lokation">
               CHRISTIANSHAVN
               <br />
               BEBOERHUS
@@ -103,11 +289,43 @@
   </body>
 </html>
 <style>
-  article {
+  /* styling for filtering button */
+  fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .dag {
+    text-align: start;
+  }
+  .dato {
+    text-align: end;
+  }
+  button {
+    border: var(--border);
+    text-decoration: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    padding-inline: 10px;
+  }
+  button:hover {
+    background-color: var(--ui-bg);
+    color: white;
+  }
+  button:hover p {
+    color: var(--ui-hover-color);
+  }
+  button.mixitup-control-active {
+    background-color: var(--ui-bg);
+  }
+  button.mixitup-control-active p {
+    color: var(--ui-hover-color);
+  }
+  /* styling af program cards */
+  .program {
     display: flex;
     justify-content: space-between;
     border: var(--border);
-    background-image: url(content/forstillinger/event.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -115,25 +333,45 @@
     width: auto;
     margin-block: 2rem;
   }
-  .event_lokation {
+  .sta_ret {
+    background-image: url(content/forstillinger/Stå-ret-få-ret.png);
+  }
+  .surt_opstod {
+    background-image: url(content/forstillinger/et-surt-opstød.png);
+  }
+  .maskeret {
+    background-image: url(content/forstillinger/maskeret.png);
+  }
+  .wish {
+    background-image: url(content/forstillinger/wish_1.png);
+  }
+  .korer_ik {
+    background-image: url(content/forstillinger/alt-køre-ik_2.png);
+  }
+  .skammer_du {
+    background-image: url(content/forstillinger/skammer-du-dig-nu.png);
+  }
+  .mona_lisa {
+    background-image: url(content/forstillinger/mona-lisa-natten.png);
+  }
+  .program_lokation {
     font-size: var(--font-size-sm);
     text-align: center;
   }
-  .event p {
+  .program p {
     align-self: center;
     margin-inline: var(--spacing-3);
   }
-  .event_navn {
+  .program_navn {
     text-align: center;
     font-size: var(--font-size-lg);
   }
 
   @media (min-width: 1000px) {
-    article {
+    .program {
       display: flex;
       justify-content: space-between;
       border: var(--border);
-      background-image: url(content/forstillinger/event.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -141,7 +379,7 @@
       width: auto;
       margin-block: 2rem;
     }
-    .event p {
+    .program p {
       align-self: center;
       margin-inline: var(--spacing-6);
     }
