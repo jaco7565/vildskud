@@ -1,6 +1,3 @@
-var containerEl = document.querySelector(".vildskudprogram");
-var mixer = mixitup(containerEl);
-
 const burger = document.querySelector(".hamburger");
 const burgerContent = document.querySelector(".burger-content");
 const acceptCookie = document.querySelector("#accepter");
