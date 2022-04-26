@@ -63,43 +63,51 @@
     <main>
       <section class="wrapper">
         <section class="section">
-          <h1>Om VildSkud</h1>
+          <h2 class="text-center">Om VildSkud</h2>
 
-          <article>
-            <article>
-              <h3>VILDSKUDS HISTORIE</h3>
-              <p>
-                Den første Vildskud Festival blev afholdt i 2003, på baggrund af
-                initiativ fra studentermedhjælperen i DATS – lands­forening for
-                dramatisk virksomhed – og aktive scenekunstnere i
-                undergrundsmiljøet.
-              </p>
-              <p>
-                Alle ønskede de at kortlægge det lidt diffuse område
-                ‘independent-scenen’ og ud fra en fornemmelse af, at der rundt
-                omkring i københavnske kældre og nedlagte fabrikslokaler voksede
-                stærke kreative kræfter, blev kimen til Vildskud lagt.
-              </p>
-              <p>
-                Et udpluk af kræfterne fra undergrunden satte sig sammen for at
-                skabe et fællesskab, hvor aktørerne kunne mødes. I august ’03
-                blev Vildskud en realitet. I dag er Vildskud en del af
-                TeaterHuset og har hjemme i Huset-KBH, hvor vi hvert år får
-                sparring og støtte til at lave den bedst tænkelige festival.
-              </p>
-            </article>
+          <article class="om_flex">
+            <div>
+              <article>
+                <h3>VILDSKUDS HISTORIE</h3>
+                <p>
+                  Den første Vildskud Festival blev afholdt i 2003, på baggrund
+                  af initiativ fra studentermedhjælperen i DATS – lands­forening
+                  for dramatisk virksomhed – og aktive scenekunstnere i
+                  undergrundsmiljøet.
+                </p>
+                <p>
+                  Alle ønskede de at kortlægge det lidt diffuse område
+                  ‘independent-scenen’ og ud fra en fornemmelse af, at der rundt
+                  omkring i københavnske kældre og nedlagte fabrikslokaler
+                  voksede stærke kreative kræfter, blev kimen til Vildskud lagt.
+                </p>
+                <p>
+                  Et udpluk af kræfterne fra undergrunden satte sig sammen for
+                  at skabe et fællesskab, hvor aktørerne kunne mødes. I august
+                  ’03 blev Vildskud en realitet. I dag er Vildskud en del af
+                  TeaterHuset og har hjemme i Huset-KBH, hvor vi hvert år får
+                  sparring og støtte til at lave den bedst tænkelige festival.
+                </p>
+              </article>
 
-            <article>
-              <h3 class="outlined">SNESKUD</h3>
-              <p>
-                VILDSKUD festival søger PR og SOME ansvarlig – det kan blive
-                dig! Vi giver dig kunstnerisk frihed til at danne rammerne for
-                festivalens visuelle udtryk! Du bliver en del af et stærkt
-                kunstnerisk team, som brænder for scenekunsten og festiva- len!
-                Send os en mail på info@vildskud.dk og hør mere!
-              </p>
-            </article>
-            <figure><img src="" alt="Om os billede" /></figure>
+              <article>
+                <h3 class="outlined">SNESKUD</h3>
+                <p>
+                  VILDSKUD festival søger PR og SOME ansvarlig – det kan blive
+                  dig! Vi giver dig kunstnerisk frihed til at danne rammerne for
+                  festivalens visuelle udtryk! Du bliver en del af et stærkt
+                  kunstnerisk team, som brænder for scenekunsten og festiva-
+                  len! Send os en mail på info@vildskud.dk og hør mere!
+                </p>
+              </article>
+            </div>
+
+            <figure class="om_billede">
+              <img
+                src="content/spillesteder/teaterhuset.png"
+                alt="Om os billede"
+              />
+            </figure>
           </article>
 
           <h3>TEAMET BAG</h3>
@@ -186,15 +194,30 @@
 <style>
   .navn_teamet {
     border: var(--border);
+    padding-block: var(--spacing-8);
   }
   #teamet_bag p {
     text-align: center;
   }
+  .om_billede {
+    display: none;
+  }
   @media (min-width: 1000px) {
     #teamet_bag {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: auto auto auto;
+
       gap: 10px;
+    }
+
+    .om_flex {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+    .om_billede {
+      display: block;
+      align-self: center;
     }
   }
 </style>
