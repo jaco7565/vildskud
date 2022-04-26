@@ -17,13 +17,13 @@ function showBurger() {
   burgerContent.classList.toggle("open");
 }
 
-function showHeader() {
-  const header = document.querySelector(".navbar-top");
-  header.classList.toggle("sticky", window.scrollY > 0);
-  console.log("hej");
+function fjernCookie() {
+  /*  console.log("hej"); */
+  cookies.classList.add("hidden");
+  sessionStorage.setItem("jatilcookies", true);
+  console.log(sessionStorage.getItem("jatilcookies"));
 }
 
-function fjernCookie() {
-  console.log("hej");
+if (sessionStorage.getItem("jatilcookies")) {
   cookies.classList.add("hidden");
 }
