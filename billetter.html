@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vildskud</title>
+    <title>Vildskud | Køb billetter</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +18,8 @@
     <header>
       <nav>
         <div class="navbar-top">
-          <h1>
-            <a class="logo" href="index.html">V<span class="s">S</span></a>
+          <h1 class="logo">
+            <a href="index.html">VS</a>
           </h1>
           <div class="date">
             <p>10 - 14</p>
@@ -63,87 +63,60 @@
       <section class="wrapper">
         <section class="section">
           <h2 class="text-center">Billetter</h2>
-          <p class="text-center">
+          <p class="text-center intro-p">
             Med en billet til VildSkud festival, får du mulighed for at opleve
             undergrunden i dansk scenekunst og medvirke på en platform for at
             møde et bredt publikum.
           </p>
-
-          <article class="event">
-            <p>12:30</p>
-            <p class="event_navn">SUPER FEDT EVENT</p>
-            <p class="event_lokation">
-              CHRISTIANSHAVN
-              <br />
-              BEBOERHUS
-            </p>
-          </article>
-          <article class="event">
-            <p>12:30</p>
-            <p class="event_navn">SUPER FEDT EVENT</p>
-            <p class="event_lokation">
-              CHRISTIANSHAVN
-              <br />
-              BEBOERHUS
-            </p>
-          </article>
-
-          <article class="event">
-            <p>12:30</p>
-            <p class="event_navn">SUPER FEDT EVENT</p>
-            <p class="event_lokation">
-              CHRISTIANSHAVN
-              <br />
-              BEBOERHUS
-            </p>
+          <article class="tickets">
+            <article class="ticket" id="partout">
+              <h3>PARTOUTBILLET</h3>
+              <p>Få adgang til alle dage og forestillinger</p>
+              <p class="lead">295 kr</p>
+              <a href="#" class="button">Køb billet</a>
+            </article>
+            <article class="day-tickets">
+              <article class="ticket">
+                <h3 class="outlined">TORSDAG</h3>
+                <p>
+                  Få adgang til torsdag, og se blandt andet ‘Wish’ og ‘Alt
+                  kører, ik’ med Panta Reje.
+                </p>
+                <p class="lead">120 kr</p>
+                <a href="#" class="button">Køb billet</a>
+              </article>
+              <article class="ticket">
+                <h3>FREDAG</h3>
+                <p>
+                  Få adgang til torsdag, og se blandt andet ‘Wish’ og ‘Alt
+                  kører, ik’ med Panta Reje.
+                </p>
+                <p class="lead">120 kr</p>
+                <a href="#" class="button">Køb billet</a>
+              </article>
+              <article class="ticket">
+                <h3 class="outlined">LØRDAG</h3>
+                <p>
+                  Få adgang til torsdag, og se blandt andet ‘Wish’ og ‘Alt
+                  kører, ik’ med Panta Reje.
+                </p>
+                <p class="lead">120 kr</p>
+                <a href="#" class="button">Køb billet</a>
+              </article>
+              <article class="ticket">
+                <h3>SØNDAG</h3>
+                <p>
+                  Få adgang til torsdag, og se blandt andet ‘Wish’ og ‘Alt
+                  kører, ik’ med Panta Reje.
+                </p>
+                <p class="lead">120 kr</p>
+                <a href="#" class="button">Køb billet</a>
+              </article>
+            </article>
           </article>
         </section>
       </section>
     </main>
   </body>
 </html>
-<style>
-  article {
-    display: flex;
-    justify-content: space-between;
-    border: var(--border);
-    background-image: url(content/forstillinger/event.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 10rem;
-    width: auto;
-    margin-block: 2rem;
-  }
-  .event_lokation {
-    font-size: var(--font-size-sm);
-    text-align: center;
-  }
-  .event p {
-    align-self: center;
-    margin-inline: var(--spacing-3);
-  }
-  .event_navn {
-    text-align: center;
-    font-size: var(--font-size-lg);
-  }
-
-  @media (min-width: 1000px) {
-    article {
-      display: flex;
-      justify-content: space-between;
-      border: var(--border);
-      background-image: url(content/forstillinger/event.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 15rem;
-      width: auto;
-      margin-block: 2rem;
-    }
-    .event p {
-      align-self: center;
-      margin-inline: var(--spacing-6);
-    }
-  }
-</style>
+<style></style>

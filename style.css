@@ -272,7 +272,7 @@ main {
   grid-area: 1/1 / span 1 / span 3;
   justify-content: center;
   display: grid;
-  background-image: url("content/bg/blob.png");
+  background-image: url("content/bg/blob.webp");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -291,7 +291,8 @@ main {
 }
 
 .section {
-  margin-top: 15rem;
+  margin-block: 15rem;
+  display: grid;
 }
 
 .text-center {
@@ -308,6 +309,15 @@ p {
   font-size: var(--font-size-base);
   color: var(--p-font);
   margin-block: var(--spacing-2);
+}
+
+.p-var {
+  color: var(--primary);
+}
+
+.intro-p {
+  max-width: 500px;
+  justify-self: center;
 }
 
 h1 {
@@ -331,7 +341,12 @@ h3,
   color: var(--primary-font);
   font-weight: var(--bold);
 }
-
+.footer-heading {
+  font-family: "gerbil", sans-serif;
+  font-size: var(--font-size-xl);
+  color: var(--primary);
+  font-weight: var(--bold);
+}
 h3 {
   margin-block: var(--spacing-4);
 }
@@ -474,6 +489,11 @@ a {
 
 .cookie-link {
   color: var(--primary);
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  transition: var(--trans);
 }
 
 .cookie-card {
@@ -494,7 +514,65 @@ a {
   pointer-events: none;
 }
 
+.none {
+  display: none;
+}
+
+.ticket {
+  border: var(--border);
+  margin-block: var(--spacing-4);
+  padding-block: var(--spacing-4);
+  padding-inline: var(--spacing-5);
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--primary-font);
+  display: grid;
+  justify-content: center;
+  gap: var(--spacing-8);
+  padding-block: var(--spacing-8);
+  padding-inline: var(--spacing-6);
+}
+
+footer .p-var {
+  max-width: 500px;
+}
+
+.footer > * {
+  margin-block: var(--spacing-4);
+}
+
+.mail {
+  font-size: var(--font-size-md);
+  text-decoration: none;
+}
+
+.some-link {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
 @media (min-width: 1000px) {
+  .cookie-link:hover {
+    gap: var(--spacing-5);
+  }
+  footer {
+    background-color: var(--primary-font);
+    display: flex;
+
+    gap: var(--spacing-8);
+    padding-block: var(--spacing-8);
+    padding-inline: var(--spacing-6);
+  }
+
+  .footer > * {
+    margin-block: var(--spacing-4);
+    margin-inline: var(--spacing-8);
+  }
   .cookie-card {
     width: 100vw;
     display: flex;
@@ -528,6 +606,11 @@ a {
     /* flex-direction: row-reverse; */
     text-align: right;
     grid-column: 1/1;
+  }
+
+  .day-tickets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .hamburger:hover {
