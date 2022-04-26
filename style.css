@@ -276,7 +276,29 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  /*   animation-name: bg;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
 }
+
+/* @keyframes bg {
+  0% {
+    background-position: 25% 25%;
+  }
+
+  50% {
+    background-position: 50% 50%;
+  }
+
+  75% {
+    background-position: 75% 75%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+} */
 
 .intro {
   text-align: center;
