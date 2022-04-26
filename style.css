@@ -383,7 +383,20 @@ h3 {
   margin-block: var(--spacing-2);
 }
 
-.outlined-spons,
+.spons {
+  font-family: "Noto Serif Display", serif;
+  font-size: var(--font-size-xxl);
+  color: var(--primary-font);
+  font-weight: var(--bold);
+}
+.outlined-spons {
+  font-family: "Noto Serif Display", serif;
+  font-size: var(--font-size-xxl);
+  color: var(--primary);
+  -webkit-text-stroke: 1px var(--primary-font);
+  font-weight: var(--bold);
+}
+
 .outlined {
   font-family: "Noto Serif Display", serif;
   font-size: var(--font-size-xl);
@@ -582,6 +595,48 @@ footer .p-var {
 .some-link {
   display: flex;
   gap: var(--spacing-4);
+}
+
+.sponsor {
+  position: relative;
+  overflow: hidden;
+  height: 15vh;
+
+  grid-area: 2/1 / span 1 / span 3;
+}
+
+.banner_1 {
+  display: flex;
+  width: 12rem;
+  align-content: center;
+}
+
+.banner {
+  position: absolute;
+  display: flex;
+  animation-direction: alternate;
+
+  animation-name: banner_infinite;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.banner_2 {
+  display: flex;
+  width: 12rem;
+  align-content: center;
+  padding-left: 100rem;
+}
+
+@keyframes banner_infinite {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
 }
 
 @media (min-width: 1000px) {
