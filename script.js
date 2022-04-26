@@ -1,3 +1,6 @@
+var containerEl = document.querySelector(".vildskudprogram");
+var mixer = mixitup(containerEl);
+
 const burger = document.querySelector(".hamburger");
 const burgerContent = document.querySelector(".burger-content");
 const acceptCookie = document.querySelector("#accepter");
@@ -24,11 +27,3 @@ function fjernCookie() {
   console.log("hej");
   cookies.classList.add("hidden");
 }
-
-var containerEl = document.querySelector(".billeder");
-var mixer = mixitup(containerEl, {
-  multifilter: {
-    enable: true, // enable the multifilter extension for the mixer
-    logicBetweenGroups: "and",
-  },
-});
