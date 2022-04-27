@@ -70,23 +70,43 @@
           <!-- <a href="#" class="button">Køb billetter</a> -->
         </article>
       </section>
-      <!--   <section class="sponsor">
+      <section class="sponsor">
         <div class="banner">
           <div class="banner_1">
-            <span class="spons">NORDEA FONDEN</span
-            ><span class="spons outlined-spons">CHRISTIANSHAVNS BEBOERHUS</span
-            ><span class="spons">SKUESPILLERAKADEMIET</span
-            ><span class="spons outlined-spons">ANEMONEN</span>
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
           </div>
           <div class="banner_2">
-            <span class="spons">ZEPPELIN</span
-            ><span class="spons outlined-spons">FDD</span>
-            <span class="spons">KØBENHAVNS KOMMUNE</span>
-            <span class="spons outlined-spons">DATS</span>
-            <span class="spons">TEATERHUSET</span>
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
+            <img src="content/banner.svg" alt="" />
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <section class="cookie-card">
       <article class="cookies">
@@ -177,3 +197,56 @@
     </footer>
   </body>
 </html>
+<style>
+  .sponsor {
+    position: relative;
+    overflow: hidden;
+    height: 4rem;
+  }
+
+  .banner_1 {
+    display: flex;
+    width: 440rem;
+    align-content: center;
+  }
+  .banner {
+    position: absolute;
+    display: flex;
+
+    animation-name: banner_infinite;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .banner_2 {
+    display: flex;
+    width: 440rem;
+    align-content: center;
+    padding-left: 100rem;
+  }
+
+  @keyframes banner_infinite {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: -100%;
+    }
+  }
+  .sponsor {
+    height: 12rem;
+  }
+  @media (min-width: 1000px) {
+    .sponsor {
+      height: 22rem;
+    }
+    .banner_1 {
+      width: 818rem;
+    }
+    .banner_2 {
+      width: 818rem;
+    }
+  }
+</style>

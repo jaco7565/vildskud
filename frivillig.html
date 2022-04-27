@@ -13,6 +13,39 @@
       rel="stylesheet"
     />
   </head>
+
+  <style>
+    .frivillig {
+      margin-block: var(--spacing-10);
+      max-width: 60ch;
+    }
+
+    .frivillig_img img {
+      width: 60vw;
+      justify-content: center;
+      margin: var(--spacing-9);
+      margin-top: var(--spacing-12);
+    }
+
+    @media (min-width: 1000px) {
+      .frivillig {
+        margin-block: var(--spacing-10);
+        max-width: 60ch;
+      }
+
+      .ekstra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .frivillig_img img {
+        width: 30vw;
+        justify-content: center;
+        margin-left: var(--spacing-10);
+        margin-top: var(--spacing-12);
+      }
+    }
+  </style>
   <body>
     <header>
       <nav>
@@ -63,31 +96,40 @@
         <section class="section">
           <h1>Bliv Frivillig på VildSkud</h1>
 
-          <article class="section">
-            <h3>VIL DU VÆRE FRIVILLIG?</h3>
-            <p>
-              Vildskud Festival er afhængig af, at der hvert år er en masse
-              frivillige, der har lyst til at være med til at gøre festivalen
-              til en god oplevelse for alle deltagende. Alle frivillige får
-              mulighed for at se forestillingerne gratis, får mad under deres
-              vagter og muligheden for at møde en masse teaternørder. Jobbet som
-              frivillig består af 2 vagter på 3-4 timer. Der er et infomøde d.
-              1. august 2022. Vil du være frivillig, eller har du spørgsmål så
-              skriv til: frivillig@vildskud.dk
-            </p>
-          </article>
+          <div class="ekstra">
+            <div>
+              <article class="frivillig">
+                <h3>VIL DU VÆRE FRIVILLIG?</h3>
+                <p>
+                  Vildskud Festival er afhængig af, at der hvert år er en masse
+                  frivillige, der har lyst til at være med til at gøre
+                  festivalen til en god oplevelse for alle deltagende. Alle
+                  frivillige får mulighed for at se forestillingerne gratis, får
+                  mad under deres vagter og muligheden for at møde en masse
+                  teaternørder. Jobbet som frivillig består af 2 vagter på 3-4
+                  timer. Der er et infomøde d. 1. august 2022. Vil du være
+                  frivillig, eller har du spørgsmål så skriv til:
+                  frivillig@vildskud.dk
+                </p>
+              </article>
 
-          <article>
-            <h3 class="outlined">PR & SOME ANSVARLIG</h3>
-            <p>
-              VILDSKUD festival søger PR og SOME ansvarlig – det kan blive dig!
-              Vi giver dig kunstnerisk frihed til at danne rammerne for
-              festivalens visuelle udtryk! Du bliver en del af et stærkt
-              kunstnerisk team, som brænder for scenekunsten og festiva- len!
-              Send os en mail på info@vildskud.dk og hør mere!
-            </p>
-          </article>
-          <figure><img src="" alt="frivillig billede" /></figure>
+              <article class="frivillig">
+                <h3 class="outlined">PR & SOME ANSVARLIG</h3>
+                <p>
+                  VILDSKUD festival søger PR og SOME ansvarlig – det kan blive
+                  dig! Vi giver dig kunstnerisk frihed til at danne rammerne for
+                  festivalens visuelle udtryk! Du bliver en del af et stærkt
+                  kunstnerisk team, som brænder for scenekunsten og festiva-
+                  len! Send os en mail på info@vildskud.dk og hør mere!
+                </p>
+              </article>
+            </div>
+            <div>
+              <figure class="frivillig_img">
+                <img src="content/logo/vildskud.svg" alt="frivillig billede" />
+              </figure>
+            </div>
+          </div>
         </section>
       </section>
     </main>
