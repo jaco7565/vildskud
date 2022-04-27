@@ -115,6 +115,10 @@ img {
   display: block;
 }
 
+main {
+  margin-inline: var(--spacing-4);
+}
+
 body {
   background-color: var(--primary);
 }
@@ -126,6 +130,8 @@ body {
   height: 10vh;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -262,11 +268,6 @@ body {
 }
 
 /*Navbar slut */
-
-main {
-  display: grid;
-  grid-template-columns: 10% 1fr 10%;
-}
 
 .hero {
   grid-area: 1/1 / span 1 / span 3;
@@ -686,6 +687,11 @@ footer .p-var {
 }
 
 @media (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    margin-inline: 0;
+  }
   .cookie-link:hover {
     gap: var(--spacing-5);
   }
