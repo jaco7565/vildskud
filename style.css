@@ -134,7 +134,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 0.5rem 2rem;
+  padding: var(--spacing-2) var(--spacing-4);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -340,6 +340,7 @@ p {
   color: var(--p-font);
   margin-block: var(--spacing-2);
   max-width: 700px;
+  margin: auto;
 }
 
 .p-var {
@@ -726,7 +727,7 @@ footer .p-var {
   .logo {
     transition: var(--trans);
     padding: var(--spacing-5);
-    /* width: 10vw; */
+    width: 10vw;
   }
 
   .play-info {
