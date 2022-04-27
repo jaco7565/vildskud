@@ -329,6 +329,7 @@ body {
 .text-center {
   text-align: center;
   margin-block: var(--spacing-2);
+  color: var(--primary-font);
 }
 
 .wrapper {
@@ -413,7 +414,7 @@ h4,
 .lead {
   font-family: "copenhagen", sans-serif;
   font-size: var(--font-size-lg);
-  color: var(--primary-font);
+  color: var(--primary);
   font-weight: var(--bold);
 }
 
