@@ -99,6 +99,21 @@
                 at man må se sin egen skam i øjnene for måske, bare et øjeblik,
                 at slippe den helt. Tør du se din egen skam i øjnene?
               </p>
+              <article class="medvirkende">
+                <p class="lead">Idé, iscenesættelse og medvirkende</p>
+                <p>Julie Lindhardt og Anna Jane Lund</p>
+                <p class="lead">Dramaturgi</p>
+                <p>Katrine Matzen</p>
+                <p class="lead">Teknikker og afvikler</p>
+                <p>Frederik Thorenfeldt Poulsen</p>
+                <p class="lead">Med støtte fra</p>
+                <p>DATS - Dansk Amatør Teater & Scenekunst & Snabslanten</p>
+                <p class="lead">Tak til</p>
+                <p>
+                  Korfuvej, Simon Hay, Henning Sprogøe, Agnes Jung og Christian
+                  Morling.
+                </p>
+              </article>
             </article>
           </section>
         </section>
@@ -167,93 +182,3 @@
     </footer>
   </body>
 </html>
-
-<style>
-  .play-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-4);
-  }
-
-  #single-stykke {
-    background-image: url("content/forstillinger/event.png");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: var(--border);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 20rem;
-    width: auto;
-    margin-block: 2rem;
-  }
-
-  #stang {
-    height: 100%;
-    border: var(--border);
-    width: 1px;
-    align-self: center;
-  }
-
-  .generel-info {
-  }
-
-  .play-info {
-    position: relative;
-  }
-
-  .play-info::before {
-    content: "";
-    width: 1px;
-    height: 100%;
-    position: absolute;
-    background-color: var(--primary-font);
-    left: 50%;
-  }
-
-  .button-filled {
-    display: inline-block;
-    border: var(--border);
-    width: 10rem;
-    height: 3rem;
-    text-align: center;
-    background-color: var(--primary);
-    color: var(--primary-font);
-    font-size: var(--font-size-base);
-    position: relative;
-    padding-block: var(--spacing-2);
-    padding-inline: var(--spacing-6);
-    margin-block: var(--spacing-5);
-    margin-inline: var(--spacing-4);
-    transition: var(--trans);
-    z-index: 1;
-  }
-  .button-filled::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 10rem;
-    height: 3rem;
-    top: 8%;
-    left: 3%;
-    padding-block: var(--spacing-2);
-    padding-inline: var(--spacing-6);
-    border: var(--border);
-    box-sizing: border-box;
-    transition: ease-in 100ms;
-  }
-
-  .button:hover::before,
-  .button-var:hover::before,
-  .button-filled:hover::before {
-    top: 24%;
-    left: 8%;
-  }
-
-  .button-filled:hover {
-    background-color: var(--ui-bg);
-    color: var(--primary);
-  }
-</style>
