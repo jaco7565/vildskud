@@ -143,17 +143,15 @@ body {
   z-index: 999;
 }
 
-.logo a {
-  font-family: "gerbil", sans-serif;
-  font-size: var(--font-size-xl);
-}
-
 .logo {
   transition: var(--trans);
+  width: 14vw;
 }
-.date {
+.date p {
   display: flex;
   flex-direction: column;
+  font-family: "Noto Serif Display", serif;
+  font-weight: var(--light);
 }
 
 .bg-link {
@@ -723,6 +721,12 @@ footer .p-var {
   }
   .cookie-link:hover {
     gap: var(--spacing-5);
+  }
+
+  .logo {
+    transition: var(--trans);
+    padding: var(--spacing-5);
+    /* width: 10vw; */
   }
 
   .play-info {
