@@ -605,7 +605,7 @@ footer .p-var {
   grid-area: 2/1 / span 1 / span 3;
 }
 
-.banner_1 {
+/* .banner_1 {
   display: flex;
   width: 12rem;
   align-content: center;
@@ -627,7 +627,7 @@ footer .p-var {
   width: 12rem;
   align-content: center;
   padding-left: 100rem;
-}
+} */
 
 @keyframes banner_infinite {
   0% {
