@@ -340,6 +340,7 @@ p {
   font-size: var(--font-size-base);
   color: var(--p-font);
   margin-block: var(--spacing-2);
+  max-width: 700px;
 }
 
 .p-var {
@@ -359,7 +360,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--noto), sans-serif;
+  font-family: "gerbil", sans-serif;
   font-size: var(--font-size-xxl);
   color: var(--primary-font);
   margin-block: var(--spacing-4);
@@ -454,6 +455,10 @@ a {
   box-shadow: none;
   color: var(--primary);
 } */
+
+.spillested {
+  margin-bottom: var(--spacing-12);
+}
 
 .button {
   display: inline-block;
@@ -705,6 +710,10 @@ footer .p-var {
   margin-block: 2rem;
 }
 
+.end {
+  justify-self: end;
+}
+
 @media (min-width: 1000px) {
   main {
     display: grid;
@@ -754,7 +763,8 @@ footer .p-var {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: var(--spacing-5);
-    margin-block: var(--spacing-8);
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-14);
   }
 
   .spillested img {
