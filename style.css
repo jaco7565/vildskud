@@ -340,6 +340,7 @@ p {
   font-size: var(--font-size-base);
   color: var(--p-font);
   margin-block: var(--spacing-2);
+  max-width: 700px;
 }
 
 .p-var {
@@ -359,7 +360,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--noto), sans-serif;
+  font-family: "gerbil", sans-serif;
   font-size: var(--font-size-xxl);
   color: var(--primary-font);
   margin-block: var(--spacing-4);
