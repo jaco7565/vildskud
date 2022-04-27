@@ -425,6 +425,13 @@ a {
   color: inherit;
 }
 
+.contact_h1 {
+  font-family: "gerbil", sans-serif;
+  font-size: var(--font-size-xl);
+  color: var(--primary-font);
+  margin: 0;
+}
+
 /* .button {
   display: inline-block;
   border: var(--border);
@@ -734,6 +741,28 @@ footer .p-var {
 
   .logo:hover {
     transform: scale(1.1);
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-10);
+  }
+
+  .email {
+    margin-inline: 0;
+    margin-block: 0;
+  }
+  .some {
+    width: 25vw;
+    margin-block: var(--spacing-3);
+  }
+
+  .contact_h1 {
+    font-family: "gerbil", sans-serif;
+    font-size: var(--font-size-xl);
+    color: var(--primary-font);
+    margin: 0;
   }
 }
 
