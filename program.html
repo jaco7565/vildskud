@@ -396,13 +396,7 @@
     padding-inline: var(--spacing-2);
     transition: var(--trans);
   }
-  button:hover {
-    background-color: var(--ui-bg);
-    color: white;
-  }
-  button:hover p {
-    color: var(--ui-hover-color);
-  }
+
   button.mixitup-control-active {
     background-color: var(--ui-bg);
   }
@@ -448,12 +442,6 @@
   }
   .program {
     -webkit-text-stroke: 1px var(--ui-bg);
-  }
-
-  .program:hover {
-    background-color: var(--ui-bg);
-    background-image: none;
-    -webkit-text-stroke: 0px var(--ui-bg);
   }
 
   .program_lokation {
@@ -510,6 +498,19 @@
       font-family: var(--noto), serif;
       color: var(--primary);
       font-size: var(--font-size-xl);
+    }
+
+    button:hover {
+      background-color: var(--ui-bg);
+      color: white;
+    }
+    button:hover p {
+      color: var(--ui-hover-color);
+    }
+    .program:hover {
+      background-color: var(--ui-bg);
+      background-image: none;
+      -webkit-text-stroke: 0px var(--ui-bg);
     }
   }
 </style>
