@@ -62,41 +62,43 @@
     <main>
       <section class="wrapper">
         <section class="section">
-          <h2 class="text-center">Events</h2>
-          <p class="text-center">
-            Kom med til vores sjove, og meget populære events. Her klæder vi dig
-            blandt andet på til fremtidens scenekunst, til ny dansk dramatik
-            samt holder vi oplæg om scenekunst som tabu.
-          </p>
-
-          <article class="event">
-            <p>12:30</p>
-            <p class="event_navn">SUPER FEDT EVENT</p>
-            <p class="event_lokation">
-              CHRISTIANSHAVN
-              <br />
-              BEBOERHUS
-            </p>
-          </article>
-          <article class="event">
-            <p>12:30</p>
-            <p class="event_navn">SUPER FEDT EVENT</p>
-            <p class="event_lokation">
-              CHRISTIANSHAVN
-              <br />
-              BEBOERHUS
+          <article class="intro-text">
+            <h2 class="text-center">Events</h2>
+            <p class="text-center intro-p">
+              Kom med til vores sjove, og meget populære events. Her klæder vi
+              dig blandt andet på til fremtidens scenekunst, til ny dansk
+              dramatik samt holder vi oplæg om scenekunst som tabu.
             </p>
           </article>
 
-          <article class="event">
-            <p>12:30</p>
+          <a href="event-single.html" class="event">
+            <p class="event_tid">12:30</p>
             <p class="event_navn">SUPER FEDT EVENT</p>
             <p class="event_lokation">
               CHRISTIANSHAVN
               <br />
               BEBOERHUS
             </p>
-          </article>
+          </a>
+          <a href="event-single.html" class="event">
+            <p class="event_tid">12:30</p>
+            <p class="event_navn">SUPER FEDT EVENT</p>
+            <p class="event_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </a>
+
+          <a href="event-single.html" class="event">
+            <p class="event_tid">12:30</p>
+            <p class="event_navn">SUPER FEDT EVENT</p>
+            <p class="event_lokation">
+              CHRISTIANSHAVN
+              <br />
+              BEBOERHUS
+            </p>
+          </a>
         </section>
       </section>
     </main>
@@ -167,15 +169,17 @@
 <style>
   .event {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border: var(--border);
-    background-image: url(content/forstillinger/event.webp);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1200px;
+    background-size: cover;
     height: 10rem;
     width: auto;
     margin-block: 2rem;
+    font-weight: bold;
+    transition: var(--trans);
+    /* -webkit-text-stroke: 1px black; */
   }
   .event_lokation {
     font-size: var(--font-size-sm);
@@ -190,6 +194,38 @@
     font-size: var(--font-size-lg);
   }
 
+  .event {
+    -webkit-text-stroke: 1px var(--ui-bg);
+  }
+
+  .event:hover {
+    background-color: var(--ui-bg);
+    background-image: none;
+    -webkit-text-stroke: 0px var(--ui-bg);
+  }
+
+  .event_lokation {
+    font-size: var(--font-size-md);
+    text-align: center;
+    color: var(--primary);
+  }
+  .event_tid {
+    font-family: var(--noto), serif;
+    color: var(--primary);
+    font-size: var(--font-size-md);
+  }
+  .event_navn {
+    text-align: center;
+    font-family: var(--noto), serif;
+    color: var(--primary);
+    font-size: var(--font-size-lg);
+    text-transform: uppercase;
+  }
+  .event p {
+    align-self: center;
+    margin-inline: var(--spacing-3);
+  }
+
   @media (min-width: 1000px) {
     .event {
       display: flex;
@@ -198,14 +234,27 @@
       background-image: url(content/forstillinger/event.webp);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 1200px;
+      background-size: cover;
       height: 15rem;
       width: auto;
       margin-block: 2rem;
     }
-    .event p {
-      align-self: center;
-      margin-inline: var(--spacing-6);
+    .event_lokation {
+      font-size: var(--font-size-md);
+      text-align: center;
+      color: var(--primary);
+      font-family: var(--noto), serif;
+    }
+    .event_tid {
+      font-family: var(--noto), serif;
+      color: var(--primary);
+      font-size: var(--font-size-md);
+    }
+    .event_navn {
+      text-align: center;
+      font-family: var(--noto), serif;
+      color: var(--primary);
+      font-size: var(--font-size-xl);
     }
   }
 </style>

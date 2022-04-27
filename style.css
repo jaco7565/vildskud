@@ -677,11 +677,28 @@ footer .p-var {
   justify-content: center;
   align-items: center;
   border: var(--border);
-  background-image: url("content/forstillinger/event.png");
+  background-image: url("content/forstillinger/et-surt-opstød.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 20rem;
+  padding-inline: var(--spacing-1);
+
+  width: auto;
+  margin-block: 2rem;
+}
+
+#event-stykke {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: var(--border);
+  background-image: url("content/forstillinger/event.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
   padding-inline: var(--spacing-1);
 
   width: auto;
