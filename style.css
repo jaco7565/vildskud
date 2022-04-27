@@ -1,6 +1,7 @@
 :root {
   /* Farver */
   --primary: #eae3d8;
+  --primary-trans: #eae3d89b;
   --primary-font: #4c433d;
   --p-font: #55514a;
 
@@ -115,6 +116,10 @@ img {
   display: block;
 }
 
+main {
+  margin-inline: var(--spacing-4);
+}
+
 body {
   background-color: var(--primary);
 }
@@ -122,10 +127,13 @@ body {
 /*Nav bar */
 
 .navbar-top {
-  background-color: var(--trans-color);
+  background-color: var(--primary-trans);
+  backdrop-filter: blur(5px);
   height: 10vh;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -262,11 +270,6 @@ body {
 }
 
 /*Navbar slut */
-
-main {
-  display: grid;
-  grid-template-columns: 10% 1fr 10%;
-}
 
 .hero {
   grid-area: 1/1 / span 1 / span 3;
@@ -686,6 +689,11 @@ footer .p-var {
 }
 
 @media (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    margin-inline: 0;
+  }
   .cookie-link:hover {
     gap: var(--spacing-5);
   }
@@ -827,12 +835,13 @@ footer .p-var {
   }
 
   .email {
+    margin-top: var(--spacing-3);
     margin-inline: 0;
-    margin-block: 0;
   }
   .some {
-    width: 25vw;
+    width: 15vw;
     margin-block: var(--spacing-3);
+    margin: 0;
   }
 
   .contact_h1 {
