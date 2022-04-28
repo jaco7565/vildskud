@@ -140,12 +140,13 @@ body {
   align-items: center;
   transition: var(--trans);
   color: var(--primary-font);
-  z-index: 999;
+  z-index: 9999;
 }
 
 .logo {
   transition: var(--trans);
-  width: 14vw;
+  width: 60px;
+  z-index: 9999;
 }
 .date p {
   display: flex;
@@ -724,11 +725,11 @@ footer .p-var {
     gap: var(--spacing-5);
   }
 
-  .logo {
+  /*   .logo {
     transition: var(--trans);
     padding: var(--spacing-5);
     width: 10vw;
-  }
+  } */
 
   .play-info {
     display: grid;
