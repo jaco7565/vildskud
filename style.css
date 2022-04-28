@@ -296,14 +296,16 @@ body {
 }
 
 /*Navbar slut */
-
+.bg-main {
+  background-image: url("content/bg/blob.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hero {
   grid-area: 1/1 / span 1 / span 3;
   justify-content: center;
   display: grid;
-  background-image: url("content/bg/blob.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+
   min-height: 100vh;
   /*   animation-name: bg;
   animation-duration: 4s;
