@@ -120,6 +120,33 @@ main {
   margin-inline: var(--spacing-4);
 }
 
+#wcb {
+  display: flex;
+  justify-content: left;
+}
+
+#wcb #wcb_a {
+  border-radius: 0 0.3em 0.3em 0;
+  border-left: 0;
+  border-left-color: currentcolor;
+  background: transparent !important;
+  color: #fff;
+  font-weight: 700;
+  border-color: var(--primary) !important;
+}
+
+#wcb #wcb_g {
+  border-radius: 0.3em 0 0 0.3em;
+  background: var(--primary) !important;
+  border-right: 0;
+  min-width: 8.2em;
+}
+#wcb #wcb_a,
+#wcb #wcb_g {
+  padding: 0.3em 0.5em;
+  border: 1px solid var(--primary) !important;
+}
+
 body {
   background-color: var(--primary);
 }
@@ -140,12 +167,13 @@ body {
   align-items: center;
   transition: var(--trans);
   color: var(--primary-font);
-  z-index: 999;
+  z-index: 9999;
 }
 
 .logo {
   transition: var(--trans);
-  width: 14vw;
+  width: 60px;
+  z-index: 9999;
 }
 .date p {
   display: flex;
@@ -724,11 +752,11 @@ footer .p-var {
     gap: var(--spacing-5);
   }
 
-  .logo {
+  /*   .logo {
     transition: var(--trans);
     padding: var(--spacing-5);
     width: 10vw;
-  }
+  } */
 
   .play-info {
     display: grid;
