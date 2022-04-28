@@ -1,2 +1,6 @@
 var containerEl = document.querySelector(".vildskudprogram");
-var mixer = mixitup(containerEl);
+var mixer = mixitup(containerEl, {
+  load: {
+    filter: ".onsdag",
+  },
+});
