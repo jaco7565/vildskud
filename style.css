@@ -1,6 +1,6 @@
 :root {
   /* Farver */
-  --primary: #eae3d8;
+  --primary: rgb(234, 227, 216);
   --primary-trans: #eae3d89b;
   --primary-font: #4c433d;
   --p-font: #55514a;
@@ -368,7 +368,6 @@ p {
   color: var(--p-font);
   margin-block: var(--spacing-2);
   max-width: 700px;
-  margin: auto;
 }
 
 .p-var {
